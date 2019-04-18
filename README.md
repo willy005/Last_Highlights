@@ -24,3 +24,4 @@ As a user you will be able to:
 
 #### Contacts
 Phone : 0707148822
+Email : nillyw31@gmail.com
