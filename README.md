@@ -1,6 +1,6 @@
-### Last News Highlight
+## Last News Highlight
 
-### By Wilfred Mutura
+## By Wilfred Mutura
 
 ## Description
 As a user you will be able to:
@@ -22,7 +22,7 @@ As a user you will be able to:
 2. Flask 1.0.2
 3. Jinja 2.10.1
 
-#### Contacts
-Phone : 0707148822
+## Contacts
+#### Phone : 0707148822
 Email : nillyw31@gmail.com
 Social Media Accounts @Willy_kid
