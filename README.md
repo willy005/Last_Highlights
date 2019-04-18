@@ -16,3 +16,8 @@ As a user you will be able to:
 4. Type git clone then paste the link you copied from github and press enter.
 5. A new subdirectory will appear in your current folder.
 6. Open the folder with your favourite code editor.
+
+## Technologies used
+1. Python3.6
+2. Flask 1.0.2
+3. Jinja 2.10.1
