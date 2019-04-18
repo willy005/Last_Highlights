@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Hello News!</h1>
+    <div class="source">
+
+              {% for article in news %}
+                  <a href="/sources/{{ article.get("id") }}">
+            <ul>
+                <li><strong>Article Id:</strong> {{ article.get("id") }}</li>
+                <li><strong>Article name:</strong> {{ article.get("name") }}</li>
+                <li><strong>Description:</strong> {{ article.get("description") }}</li>
+                <li><strong>Category: </strong>{{ article.get("category") }}</li>
+                <li><strong>Language: </strong>{{ article.get("language") }}</li>
+                <li><strong>Country: </strong>{{ article.get("country") }}</li>
+            </ul>
+        {% endfor %}
+        </a>
+    </div>
+{% endblock content %}
