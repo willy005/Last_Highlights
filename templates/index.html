@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="source">
+    <h1>Hello News</h1>
+    <h2>Top Headlines</h2>
+    {% for article in news %}
+        <ul>
+            <li><img src="{{ article.get("urlToImage") }}" alt="Article image"></li>
+            <li>Published on: {{ article.get("publishedAt") }}</li>
+            <li>Article Author: {{ article.get("author") }}</li>
+            <li>Article title: {{ article.get("title") }}</li>
+            <li>Description: {{ article.get("description") }}</li>
+
+            <a href="{{ article.get("url") }}">
+                <li>See full article</li>
+            </a>
+        </ul>
+    {% endfor %}
+</div>
+{% endblock content %}
