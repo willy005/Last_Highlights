@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Welcome to Articles by {{ articles[0].get("source").get("id") }}</h1>
+    <div class="source">
+
+              {% for article in articles %}
+
+            <ul>
+                {% if  article.get("urlToImage")  %}
+                    <li><img src="{{ article.get("urlToImage") }}" alt=""></li>
+                {% endif %}
+                <li><strong>Written By: </strong>{{ article.get("author") }}</li>
+                <li><strong>Title: </strong>{{ article.get("title") }}</li>
+                <li><strong>Description: </strong>{{ article.get("description") }}</li>
+                <li><strong>Content: </strong>{{ article.get("content") }}</li>
+                <a href="{{ article.get("url") }}">
+                    <li>See full article from website</li>
+                </a>
+            </ul>
+        {% endfor %}
+
+    </div>
+{% endblock content %}>
